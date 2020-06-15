@@ -5,6 +5,7 @@ class CreatePlants < ActiveRecord::Migration[6.0]
       t.string :latin_name
       t.string :description
       t.string :zone
+      t.string :image
 
       t.timestamps
     end

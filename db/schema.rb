@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_06_15_163909) do
     t.string "latin_name"
     t.string "description"
     t.string "zone"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -34,6 +35,7 @@ ActiveRecord::Schema.define(version: 2020_06_15_163909) do
     t.string "name"
     t.string "species"
     t.string "description"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
