@@ -33,4 +33,3 @@ pp3 = PlantPollinator.create(plant_id: plant_b.id, pollinator_id: p3.id)
 pp4 = PlantPollinator.create(plant_id: plant_c.id, pollinator_id: p2.id)
 pp5 = PlantPollinator.create(plant_id: plant_e.id, pollinator_id: p1.id)
 pp6 = PlantPollinator.create(plant_id: plant_b.id, pollinator_id: p4.id)
-
