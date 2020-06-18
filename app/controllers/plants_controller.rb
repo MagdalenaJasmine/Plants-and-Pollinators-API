@@ -22,7 +22,7 @@ class PlantsController < ApplicationController
     end
 
 
-    def updated 
+    def update
         plant = Plant.find(params[:id])
         plant.update!(plant_params)
         if plant.valid?
