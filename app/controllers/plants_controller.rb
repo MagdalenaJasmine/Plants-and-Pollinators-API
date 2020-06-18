@@ -6,20 +6,32 @@ class PlantsController < ApplicationController
 
     end
 
-
-
     def create 
         
         plant = Plant.create!(plant_params)
         if plant.valid?
-            params[:plant][:pollinator_ids].map do |pol|
-                PlantPollinator.create(pollinator_id: pol, plant_id: plant.id ) 
-            end
             render json: plant
         else 
             render json: plant.errors.full_messages 
         end
     end
+
+    def show
+        plant = Plant.find_by(id: params[:id])
+        render json: plant
+    end
+
+
+    def updated 
+        plant = Plant.find(params[:id])
+        plant.update!(plant_params)
+        if plant.valid?
+            render json: plant
+        else   
+            render json: plant.errors.full_messages
+        end
+    end
+
 
     private
     def plant_params
