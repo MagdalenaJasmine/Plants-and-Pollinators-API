@@ -16,6 +16,16 @@ plant_d = Plant.create(common_name: "Pole Beans", latin_name: "Phaseolus Vulgari
 ")
 plant_e = Plant.create(common_name: "Dutchman's Pipe Vine", latin_name: "Aristolochia macrophylla" , description: "The plant is also called pipe vine and is suitable for gardens in USDA zones 8 to 10. The vine is usually only 10 to 15 feet (3 to 4.5 m.) long but can get as long as 25 feet (7.5 m.) in perfect growing conditions. Growing a Dutchman’s pipe requires a trellis or vertical structure to support the twining stems and wide foliage. The large heart-shaped leaves alternate along a woody stem. The flowers appear in late spring and early summer. They are a tinged plum color with speckles. An interesting bit of Dutchman’s pipe info is its one-time use as an aid to childbirth because of its resemblance to a human fetus. This property leads to another of the vine’s names, birthwort. Dutchman’s pipe vines are also host plants for swallowtail butterflies and provide habitat for beneficial insects.", zone: "8-10", image: "https://i.pinimg.com/originals/39/5f/d3/395fd32a4eed2515ba0b3540377e3639.jpg
 ")
+plant_f = Plant.create(common_name: "Petunia", latin_name: "Petunia" , description: "Petunia is genus of 20 species[1] of flowering plants of South American origin. The popular flower of the same name derived its epithet from the French, which took the word petun, meaning tobacco from a Tupi–Guarani language. An annual, most of the varieties seen in gardens are hybrids (Petunia × atkinsiana, also known as Petunia × hybrida).", zone: "9-11", image: "https://i.pinimg.com/originals/e3/67/67/e3676768e09651a75f7451d4dafab0d4.jpg")
+plant_g = Plant.create(common_name: "Coriander", latin_name: "Coriandrum Savitum" , description: "Cilantro (Coriandrum sativum L) is part of the Apiaceae family, which contains 3,700 species, including carrots, celery, and parsley. All parts of the plant are edible, but people most commonly use the fresh leaves and dried seeds in cooking. Cilantro has been a part of global cuisine for a long time.It is a good source of antioxidants. Using cilantro to flavor food may encourage people to use less salt and reduce their sodium intake.", zone: "3-11", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Illustration_Apium_graveolens0.jpg/1200px-Illustration_Apium_graveolens0.jpg")
+plant_h = Plant.create(common_name: "Thistle", latin_name: "Asteraceae" , description: "Thistle is the common name of a group of flowering plants characterised by leaves with sharp prickles on the margins, mostly in the family Asteraceae. Prickles can also occur all over the plant – on the stem and on the flat parts of the leaves. These prickles are an adaptation that protects the plant from being eaten by herbivores. Typically, an involucre with a clasping shape similar to a cup or urn subtends each of a thistle's flowerheads.", zone: "3-9", image: "https://i.pinimg.com/originals/25/4b/fd/254bfdeda9c49ffc225148de995a23f9.jpg")
+plant_i = Plant.create(common_name: "Borage", latin_name: "Borago Officinalis" , description: "Borage, also known as a starflower, is an annual herb in the flowering plant family Boraginaceae. It is native to the Mediterranean region and has naturalized in many other locales. It grows satisfactorily in gardens in most of Europe such as Denmark, France, Germany, the UK climate, remaining in the garden from year to year by self-seeding. The leaves are edible and the plant is grown in gardens for that purpose in some parts of Europe. The plant is also commercially cultivated for borage seed oil extracted from its seeds. The plant contains pyrrolizidine alkaloids, some of which are hepatotoxic, mutagenic and carcinogenic (see below under Phytochemistry).", zone: "3-10", image: "https://i.pinimg.com/474x/4b/9a/5c/4b9a5c684233fb35d5d6ba64d2ada252.jpg")
+plant_j = Plant.create(common_name: "Honeysuckle", latin_name: "Lonicera", description: "A honeysuckle plant is a great addition to any landscape and will draw abundant wildlife with its sweet, yellow to bright-red blossoms. Honeysuckles (Lonicera spp.) belong to a large family that consists of hardy shrubs and vines that grow in almost every state in America. There are over 180 different varieties of honeysuckle. Some are deciduous and some, in warmer regions, are evergreen. Because of their versatility and abundance, growing and caring for honeysuckle vines is easy.", zone: "4-9", image: "https://i.pinimg.com/originals/2e/eb/3d/2eeb3d8e006d6dc85584539ca0fe436e.jpg")
+
+
+
+
+
 
 
 p1 = Pollinator.create(name: "Pipevine Swallowtail", species: "Battus philenor", description: "This butterfly is black with iridescent-blue hindwings. They are found in many different habitats, but are most commonly found in forests.[3] Caterpillars are often black or red, and feed on compatible plants of the genus Aristolochia. They are known for sequestering acids from the plants they feed on in order to defend themselves from predators by being poisonous when consumed. The adults feed on the nectar of a variety of flowers. Some species of Aristolochia are toxic to the larvae, typically tropical varieties.", image:"https://c8.alamy.com/comp/P6H3T2/pipevine-swallowtail-butterfly-battus-philenor-14-and-black-swallowtwail-papilio-polyxenes-asterias-235-handcoloured-lithograph-from-john-o-westwoods-new-edition-of-dru-drurys-illustrations-of-exotic-entomology-bohn-london-1837-P6H3T2.jpg")
@@ -26,10 +36,39 @@ p3 = Pollinator.create(name: "Luna Moth", species: "Actias Luna", description: "
 
 p4 = Pollinator.create(name: "Anna's Hummingbird", species: "Calypte Anna", description: "Anna’s Hummingbirds are among the most common hummingbirds along the Pacific Coast, yet they're anything but common in appearance. With their iridescent emerald feathers and sparkling rose-pink throats, they are more like flying jewelry than birds. Though no larger than a ping-pong ball and no heavier than a nickel, Anna’s Hummingbirds make a strong impression. In their thrilling courtship displays, males climb up to 130 feet into the air and then swoop to the ground with a curious burst of noise that they produce through their tail feathers.", image: "https://i.pinimg.com/originals/67/ba/ef/67baeff76122f70756df672851b04265.jpg")
 p5 = Pollinator.create(name: "Common Wasp", species: "Vespula Vulgaris", description: "Vespula vulgaris is a eusocial vespid that builds its grey paper nest in or on a structure capable of supporting it. A founding queen searches for a hollow tree, wall cavity, rock crevice, or even a mammal-made hole to build a nest. One colony cycle lasts for about 6–11 months and each colony cycle consists of around 3000–8000 larvae.", image: "https://i.pinimg.com/originals/9c/e5/54/9ce554acb2ca0832ae5fa5618aa9d819.jpg")
+p6 = Pollinator.create(name: "Leafcutting Bee", species: "Megachilidae", description: "Leafcutting bees are important native pollinators of North America. They use cut leaves to construct nests in cavities (mostly in rotting wood). They create multiple cells in the nest, each with a single larva and pollen for the larva to eat. Leafcutting bees are important pollinators of wildflowers, fruits, vegetables and other crops. Some leafcutting bees, Osmia spp. are even used as commercial pollinators (like honey bees) in crops such as alfalfa and blueberries.", image:"https://farm4.staticflickr.com/3915/14775390701_d18c130402_b.jpg")
+p7 = Pollinator.create(name: "Fruit Bat", species: "Pteropodidae", description: "The Fruit Bat falls into the category of the Megabat and sometimes they are called the Flying Fox in some locations. There are many differences in their size from one location to the next. Due to that variation these bats are often mistaken for many different types rather than being identified as the same.", image:"https://i.pinimg.com/originals/f2/5d/f6/f25df6a75ac169b6b43086e7e6329abe.jpg")
+p8 = Pollinator.create(name: "Aphrodite Fritillary", species: "Speyeria Aphrodite", description: "Geographically variable. Upperside reddish orange-brown; male forewing with black spot below cell and with no black scales on veins. Underside of hindwing has pale submarginal band narrow or missing. Their range includes Canada south of the taiga from Nova Scotia west through the northern Midwest and Great Plains to the Rocky Mountains, then south in the mountains to east-central Arizona and northern New Mexico; south in the Appalachians to northern Georgia. ", image:"https://i.pinimg.com/originals/24/72/be/2472be12840851556c0160161ea152b1.jpg")
+p9 = Pollinator.create(name: "Tachinid fly ", species: "Diptera", description: "The family Tachinidae is by far the largest and most important group of insect parasitic flies, with over 1300 species in North America. All species are parasitic in the larval stage and many are important natural enemies of major pests. Many species of tachinids have been introduced into North America from their native lands to suppress populations of alien pests. Tachinid flies differ in color, size, and shape but many somewhat resemble house flies. They usually are either gray, black, or striped and often have many distinct abdominal bristles. Adults feed on liquids such as nectar and the honeydew of aphids and scale insects.", image:"https://i.etsystatic.com/10028242/r/il/a628de/1181814672/il_570xN.1181814672_a8t6.jpg")
+p10 = Pollinator.create(name: "Hummingbird Hawk Moth", species: "Macroglossum stellatarum", description: " The Humming-bird Hawk-moth has orange-brown hindwings which is evident in flight. It has forewings that are greyish-brown and a black and white chequered body.The caterpillars can be found from June to October, but most frequently found in August. They overwinter as adults in unheated outbuildings and in crevices and holes in walls and trees, pupating in a cocoon spun close to the ground, among the foliage of the foodplant or in leaf litter.", image:"https://i.pinimg.com/originals/ed/5e/b5/ed5eb52b4ca0bd2d32798b6f47128094.jpg")
+
+
 
 pp1 = PlantPollinator.create(plant_id: plant_a.id, pollinator_id: p2.id)
 pp2 = PlantPollinator.create(plant_id: plant_a.id, pollinator_id: p5.id)
 pp3 = PlantPollinator.create(plant_id: plant_b.id, pollinator_id: p3.id)
 pp4 = PlantPollinator.create(plant_id: plant_c.id, pollinator_id: p2.id)
 pp5 = PlantPollinator.create(plant_id: plant_e.id, pollinator_id: p1.id)
-pp6 = PlantPollinator.create(plant_id: plant_b.id, pollinator_id: p4.id)
+pp7 = PlantPollinator.create(plant_id: plant_f.id, pollinator_id: p10.id)
+pp8 = PlantPollinator.create(plant_id: plant_f.id, pollinator_id: p6.id)
+pp9 = PlantPollinator.create(plant_id: plant_f.id, pollinator_id: p2.id)
+pp10 = PlantPollinator.create(plant_id: plant_f.id, pollinator_id: p4.id)
+
+pp11 = PlantPollinator.create(plant_id: plant_g.id, pollinator_id: p9.id)
+pp12 = PlantPollinator.create(plant_id: plant_g.id, pollinator_id: p5.id)
+pp13 = PlantPollinator.create(plant_id: plant_g.id, pollinator_id: p6.id)
+
+pp14 = PlantPollinator.create(plant_id: plant_h.id, pollinator_id: p8.id)
+pp15 = PlantPollinator.create(plant_id: plant_h.id, pollinator_id: p2.id)
+
+
+pp16 = PlantPollinator.create(plant_id: plant_i.id, pollinator_id: p6.id)
+pp17 = PlantPollinator.create(plant_id: plant_i.id, pollinator_id: p2.id)
+
+pp18 = PlantPollinator.create(plant_id: plant_j.id, pollinator_id: p4.id)
+pp19 = PlantPollinator.create(plant_id: plant_i.id, pollinator_id: p10.id)
+pp19 = PlantPollinator.create(plant_id: plant_e.id, pollinator_id: p1.id)
+
+
+
+
